@@ -4,7 +4,7 @@ TypeScript + WebPack and with fullscreen button, link button and preloader.
 ## What does it do:
 * TypeScript with Phaser 3.15.1
 * WebPack for development
-* VSCode set up for debugging (Requires "Debugger for Firefox" - You can delete .vscode if you do not use it)
+* VSCode setup file for debugging (Requires "Debugger for Firefox" - You can delete .vscode if you do not use it)
 * TSLint to help keep this clean
 * Two buttons ready to be added directly to the game: Fullscreen & Link
 
