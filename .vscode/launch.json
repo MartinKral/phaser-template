@@ -10,21 +10,7 @@
             "reAttach": true,
             "name": "Launch localhost",
             "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}",
-            //"preLaunchTask": "tsc: build - tsconfig.json"
-        },
-
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}\\--watch",
-            "preLaunchTask": "tsc: build - tsconfig.json",
-            "outFiles": [
-                "${workspaceFolder}/dist/**/*.js"
-            ]
-        }
-
-         
+            "webRoot": "${workspaceFolder}"
+        }         
     ]
 }

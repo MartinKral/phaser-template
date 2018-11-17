@@ -1,7 +1,12 @@
 # Phaser template 
 TypeScript + WebPack and with fullscreen button, link button and preloader.
 
-You can delete .vscode if you do not use VSCode for debugging
+## What does it do:
+* TypeScript with Phaser 3.15.1
+* WebPack for development
+* VSCode set up for debugging (Requires "Debugger for Firefox" - You can delete .vscode if you do not use it)
+* TSLint to help keep this clean
+* Two buttons ready to be added directly to the game: Fullscreen & Link
 
 ### To start:
 ```
@@ -15,6 +20,7 @@ You can delete .vscode if you do not use VSCode for debugging
 
 * At http://localhost:8080/
 * Automatic rebuilds
+* F5 to debug (VS Code)
 
 
 ### To build production:
