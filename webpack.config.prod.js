@@ -1,4 +1,5 @@
 const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: './src/index.ts',
@@ -11,7 +12,7 @@ module.exports = {
       }
     ]
   },
-  devtool: "eval-source-map",
+  devtool: false,
   resolve: {
     extensions: [ '.tsx', '.ts', '.js' ]
   },
@@ -19,5 +20,11 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist/',
+  },
+  optimization: {
+    minimizer: [new UglifyJsPlugin({
+      extractComments: false
+    })]
   }
+
 };
