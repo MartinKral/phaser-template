@@ -23,7 +23,13 @@ module.exports = {
   },
   optimization: {
     minimizer: [new UglifyJsPlugin({
-      extractComments: false
+      uglifyOptions: {
+        compress: true,
+        ie8: false,
+        ecma: 5,
+        output: null,
+        warnings: true
+    }
     })]
   }
 
