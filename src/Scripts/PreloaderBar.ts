@@ -47,7 +47,7 @@ export class PreloaderBar {
       }
 
       private createPreloaderMask(): any {
-        const maskShape = this.scene.make.graphics();
+        const maskShape = this.scene.make.graphics(this.scene.game.config);
         maskShape.fillStyle(0xffffff);
         maskShape.beginPath();
 
