@@ -2,7 +2,7 @@
 TypeScript + Webpack with fullscreen button, link button and preloader.
 
 ## What does it do:
-* TypeScript with Phaser 3.15.1
+* TypeScript with Phaser 3.16.1
 * WebPack for development
 * VSCode setup file for debugging (Requires "Debugger for Firefox" - You can delete .vscode if you do not use it)
 * Uglify for compression
