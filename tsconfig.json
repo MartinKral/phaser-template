@@ -8,6 +8,9 @@
       "allowJs": true,
       "suppressImplicitAnyIndexErrors": true,
       "sourceMap": true
-    }
+    },
+
+    "exclude": [
+      "node_modules"]  
   }
   

@@ -24,7 +24,7 @@ export abstract class ForcedButton {
 
     private allowClickOnButton() {
         this.canClickOnButton = true;
-        setTimeout(() => { this.canClickOnButton = false; }, 1000);
+        setTimeout(() => { this.canClickOnButton = false; }, 300);
     }
 
     private tryToClickOnButton(): void {

@@ -12,7 +12,7 @@ module.exports = {
       }
     ]
   },
-  devtool: "eval-source-map",
+  devtool: "cheap-eval-source-map",
   resolve: {
     extensions: [ '.tsx', '.ts', '.js' ]
   },
