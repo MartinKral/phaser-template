@@ -21,7 +21,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "phaser": "^3.16.1"
+    "phaser": "^3.16.2"
   },
   "files": [
     "src/phaser.d.ts"
