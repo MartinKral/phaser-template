@@ -19,7 +19,7 @@ export abstract class ForcedButton {
     private setupGameContainer() {
         this.gameContainer = document.getElementById("game");
         this.gameContainer.addEventListener("click", this.tryToClickOnButton.bind(this));
-        this.gameContainer.addEventListener("touchend",  this.tryToClickOnButton.bind(this));
+        this.gameContainer.addEventListener("touchend", this.tryToClickOnButton.bind(this));
     }
 
     private allowClickOnButton() {

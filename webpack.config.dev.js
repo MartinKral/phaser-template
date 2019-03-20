@@ -1,5 +1,5 @@
 const path = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 
 module.exports = {
   entry: './src/index.ts',
@@ -7,18 +7,22 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: 'awesome-typescript-loader',
         exclude: /node_modules/
       }
     ]
   },
   devtool: "cheap-eval-source-map",
   resolve: {
-    extensions: [ '.tsx', '.ts', '.js' ]
+    extensions: ['.tsx', '.ts', '.js']
   },
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist/',
-  }
+  },
+  plugins: [
+    new HardSourceWebpackPlugin(),
+  ]
+
 };
