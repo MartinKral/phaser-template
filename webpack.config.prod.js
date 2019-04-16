@@ -8,13 +8,13 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 use: 'ts-loader',
-                exclude: /node_modules/
-            }
-        ]
+                exclude: /node_modules/,
+            },
+        ],
     },
     devtool: false,
     resolve: {
-        extensions: [ '.tsx', '.ts', '.js' ]
+        extensions: ['.tsx', '.ts', '.js'],
     },
     output: {
         filename: 'main.js',
@@ -24,14 +24,14 @@ module.exports = {
     optimization: {
         minimizer: [
             new UglifyJsPlugin({
-            uglifyOptions: {
-                compress: true,
-                ie8: false,
-                ecma: 5,
-                output: null,
-                warnings: true
-            }
-        })]
-    }
-
+                uglifyOptions: {
+                    compress: true,
+                    ie8: false,
+                    ecma: 5,
+                    output: null,
+                    warnings: true,
+                },
+            }),
+        ],
+    },
 };

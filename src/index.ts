@@ -21,6 +21,16 @@ class Game {
     public constructor() {
         this.game = new Phaser.Game(config);
     }
+
+    public FixScale(): void {
+        if (!this.game.scale.isFullscreen) {
+            this.game.scale.stopFullscreen();
+        }
+    }
 }
 
-new Game();
+const game = new Game();
+
+document.addEventListener('fullscreenchange', function(): void {
+    game.FixScale();
+});
