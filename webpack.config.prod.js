@@ -22,7 +22,8 @@ module.exports = {
         publicPath: '/dist/',
     },
     optimization: {
-        minimizer: [new UglifyJsPlugin({
+        minimizer: [
+            new UglifyJsPlugin({
             uglifyOptions: {
                 compress: true,
                 ie8: false,

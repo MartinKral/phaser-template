@@ -1,20 +1,18 @@
-import "phaser";
-import { InitScene } from "./Scenes/InitScene";
-import { MainMenuScene } from "./Scenes/MainMenuScene";
-import { PreloaderScene } from "./Scenes/PreloaderScene";
+import 'phaser';
+import { InitScene } from './Scenes/InitScene';
+import { MainMenuScene } from './Scenes/MainMenuScene';
+import { PreloaderScene } from './Scenes/PreloaderScene';
 
 const config: GameConfig = {
-    // width: 1000,
-    // height: 562,
     type: Phaser.AUTO,
-    parent: "game",
+    parent: 'game',
     scene: [InitScene, PreloaderScene, MainMenuScene],
     scale: {
         width: 1000,
         height: 562,
         mode: Phaser.Scale.HEIGHT_CONTROLS_WIDTH,
-        autoCenter: Phaser.Scale.CENTER_BOTH
-    }
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+    },
 };
 
 class Game {
@@ -26,5 +24,3 @@ class Game {
 }
 
 new Game();
-
-// ADD prettier

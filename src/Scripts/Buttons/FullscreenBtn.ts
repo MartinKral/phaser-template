@@ -1,4 +1,4 @@
-import { ForcedButton } from "./ForcedButton";
+import { ForcedButton } from './ForcedButton';
 
 export class FullscreenBtn extends ForcedButton {
     private scene: Phaser.Scene;
