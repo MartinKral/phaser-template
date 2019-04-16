@@ -33,6 +33,7 @@ export class PreloaderBar {
   private createPreloaderBar(): any {
     this.createPreloaderBarBackground();
     this.createPreloaderMask();
+    console.log("he  dfasdsdf  re");
   }
 
   private createPreloaderBarBackground(): any {

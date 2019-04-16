@@ -3,7 +3,7 @@ export abstract class ForcedButton {
     private canClickOnButton: boolean;
     private gameContainer: HTMLElement;
 
-    constructor(posX: number, posY: number, btnGraphicsName: string, scene: Phaser.Scene) {
+    public constructor(posX: number, posY: number, btnGraphicsName: string, scene: Phaser.Scene) {
         this.setupButton(posX, posY, btnGraphicsName, scene);
         this.setupGameContainer();
     }
@@ -16,15 +16,15 @@ export abstract class ForcedButton {
         this.button.on("pointerdown", this.allowClickOnButton, this);
     }
 
-    private setupGameContainer() {
+    private setupGameContainer(): void {
         this.gameContainer = document.getElementById("game");
         this.gameContainer.addEventListener("click", this.tryToClickOnButton.bind(this));
         this.gameContainer.addEventListener("touchend", this.tryToClickOnButton.bind(this));
     }
 
-    private allowClickOnButton() {
+    private allowClickOnButton(): void {
         this.canClickOnButton = true;
-        setTimeout(() => { this.canClickOnButton = false; }, 300);
+        setTimeout((): void => { this.canClickOnButton = false; }, 300);
     }
 
     private tryToClickOnButton(): void {
