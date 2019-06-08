@@ -10,7 +10,7 @@ const config: GameConfig = {
     scale: {
         width: 1000,
         height: 562,
-        mode: Phaser.Scale.HEIGHT_CONTROLS_WIDTH,
+        mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_BOTH,
     },
 };
