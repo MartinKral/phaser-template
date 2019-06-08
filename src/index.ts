@@ -2,14 +2,15 @@ import 'phaser';
 import { InitScene } from './Scenes/InitScene';
 import { MainMenuScene } from './Scenes/MainMenuScene';
 import { PreloaderScene } from './Scenes/PreloaderScene';
+import { GlobalConstants } from './Scripts/GlobalConstants';
 
 const config: GameConfig = {
     type: Phaser.AUTO,
     parent: 'game',
     scene: [InitScene, PreloaderScene, MainMenuScene],
     scale: {
-        width: 1000,
-        height: 562,
+        width: GlobalConstants.width,
+        height: GlobalConstants.height,
         mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_BOTH,
     },

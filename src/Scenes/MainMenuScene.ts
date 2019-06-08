@@ -9,7 +9,10 @@ export class MainMenuScene extends Phaser.Scene {
     }
 
     public create(): void {
-        new LinkBtn(400, 300, 'logo', 'https://github.com/', this);
-        new FullscreenBtn(500, 300, 'fullscreen', this);
+        console.log('Evn : ' + process.env.NODE_ENV);
+        if (process.env.NODE_ENV === 'development') {
+            new LinkBtn(250, 300, 'logo', 'https://github.com/', this);
+        }
+        new FullscreenBtn(750, 300, 'fullscreen', this);
     }
 }
