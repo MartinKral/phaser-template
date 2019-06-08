@@ -21,7 +21,6 @@
     "eslint-plugin-import": "^2.17.1",
     "eslint-plugin-prettier": "^3.0.1",
     "hard-source-webpack-plugin": "^0.13.1",
-    "phaser": "^3.16.2",
     "prettier": "^1.17.0",
     "ts-loader": "^5.3.0",
     "typescript": "^3.1.6",
@@ -30,7 +29,9 @@
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.14"
   },
-  "dependencies": {},
+  "dependencies": {
+    "phaser": "^3.17.0"
+  },
   "files": [
     "src/phaser.d.ts"
   ]
