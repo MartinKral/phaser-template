@@ -8,21 +8,18 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 use: 'awesome-typescript-loader',
-                exclude: /node_modules/
-            }
-        ]
+                exclude: /node_modules/,
+            },
+        ],
     },
-    devtool: "cheap-eval-source-map",
+    devtool: 'cheap-eval-source-map',
     resolve: {
-        extensions: ['.tsx', '.ts', '.js']
+        extensions: ['.tsx', '.ts', '.js'],
     },
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
         publicPath: '/dist/',
     },
-    plugins: [
-        new HardSourceWebpackPlugin(),
-    ]
-
+    plugins: [new HardSourceWebpackPlugin()],
 };
