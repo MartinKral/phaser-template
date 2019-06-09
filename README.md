@@ -10,7 +10,7 @@ TypeScript + Webpack with fullscreen button, link button and preloader.
 * VSCode setup file for debugging (Requires "Debugger for Firefox" - You can delete .vscode if you do not use it)
 * Two buttons ready to be added directly to the game: Fullscreen & Link
 
-### To start:
+### First time:
 ```
     npm install
 ```
