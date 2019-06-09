@@ -9,7 +9,7 @@ export class MainMenuScene extends Phaser.Scene {
     }
 
     public create(): void {
-        console.log('Evn : ' + process.env.NODE_ENV);
+        console.log('Env : ' + process.env.NODE_ENV);
         if (process.env.NODE_ENV === 'development') {
             new LinkBtn(250, 300, 'logo', 'https://github.com/', this);
         }

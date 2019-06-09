@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --host 0.0.0.0 --watch --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js",
-    "buildphaser": "webpack --config webpack.config.phaser.js --display-modules"
+    "build": "webpack --config webpack.config.phaser.js --display-modules & webpack --config webpack.config.prod.js",
+    "buildphaser": "webpack --config webpack.config.phaser.js --display-modules",
+    "buildproduction": "webpack --config webpack.config.prod.js"
   },
   "keywords": [],
   "author": "",

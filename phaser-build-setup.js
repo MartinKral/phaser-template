@@ -13,9 +13,8 @@ var Extend = require('utils/object/Extend');
  * @namespace Phaser
  */
 
-// Comment/delete modules which you are not using to reduce the final file size
+// Comment out modules which you are not using to reduce the final file size
 var Phaser = {
-
     Actions: require('actions'),
     Animations: require('animations'),
     Cache: require('cache'),
@@ -47,7 +46,6 @@ var Phaser = {
     Time: require('time'),
     Tweens: require('tweens'),
     Utils: require('utils')
-
 };
 
 //   Merge in the consts
