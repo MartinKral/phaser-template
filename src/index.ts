@@ -1,4 +1,4 @@
-import 'phaser';
+import 'phaser'; // this gets replaced by custom build on production
 import { InitScene } from './Scenes/InitScene';
 import { MainMenuScene } from './Scenes/MainMenuScene';
 import { PreloaderScene } from './Scenes/PreloaderScene';
