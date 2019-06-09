@@ -15,6 +15,9 @@ module.exports = {
     devtool: false,
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
+        alias: {
+            phaser: path.resolve(__dirname, 'src/phaser-custom-build/phaser-custom.js')
+        }
     },
     output: {
         filename: 'main.js',
@@ -23,9 +26,9 @@ module.exports = {
     },
     optimization: {
         minimizer: [
-          new TerserPlugin({
-            extractComments: true,
-          }),
+            new TerserPlugin({
+                extractComments: true,
+            }),
         ],
-      },
+    },
 };
