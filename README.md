@@ -34,9 +34,12 @@ Development build is using the full Phaser version taken from NPM.
 ```
     npm run build
 ```
+Then upload index.html + /dist to your webserver.
+
+
 If you need to iterate on proudction build, run `npm run buildprouction`. It will skip the custom build of Phaser.
 
 
-Then upload index.html + /dist to your webserver.
+
 
 
