@@ -2,7 +2,7 @@
 TypeScript + Webpack with fullscreen button, link button and preloader.
 
 ## What does it do:
-* TypeScript with Phaser 3.17.0
+* TypeScript with Phaser 3.19.0
 * Custom Phaser builds to reduce the final file size
 * Terser for compression
 * ESLint to help keep this clean

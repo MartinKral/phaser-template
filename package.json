@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --host 0.0.0.0 --watch --config webpack.config.dev.js",
+    "start": "echo Test at: http://localhost:8080/ && webpack-dev-server --host 0.0.0.0 --watch --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.phaser.js --display-modules & webpack --config webpack.config.prod.js",
     "buildphaser": "webpack --config webpack.config.phaser.js --display-modules",
     "buildproduction": "webpack --config webpack.config.prod.js"
@@ -37,7 +37,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "phaser": "^3.17.0"
+    "phaser": "^3.19.0"
   },
   "files": [
     "src/phaser.d.ts"

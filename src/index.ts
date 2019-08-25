@@ -4,7 +4,8 @@ import { MainMenuScene } from './Scenes/MainMenuScene';
 import { PreloaderScene } from './Scenes/PreloaderScene';
 import { GlobalConstants } from './Scripts/GlobalConstants';
 
-const config: GameConfig = {
+
+const config: Phaser.Types.Core.GameConfig = {
     type: Phaser.AUTO,
     parent: 'game',
     scene: [InitScene, PreloaderScene, MainMenuScene],
